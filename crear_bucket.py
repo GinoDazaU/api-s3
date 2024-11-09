@@ -6,7 +6,6 @@ def lambda_handler(event, context):
     
     response = s3.create_bucket(
         Bucket=bucket_name,
-        ACL='public-read'
     )
     return {
         'statusCode': 200,
